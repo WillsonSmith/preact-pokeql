@@ -1,0 +1,58 @@
+html {
+  background: #ee5253;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.App {
+
+}
+
+.SearchForm {
+  max-width: 400px;
+  margin: 1.6rem auto;
+}
+
+.SearchLabel {
+  font-family: sans-serif;
+  font-size: 3.4rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.SearchWrapper {
+  width: 100%;
+  display: flex;
+
+  font-size: 2rem;
+  margin-top: 0.8rem;
+}
+
+.SearchField {
+  background: #fff;
+  border: 1px solid #3c3c3c;
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+
+  flex: 1 1 auto;
+  font-size: inherit;
+
+  padding: 0.8rem;
+  margin: 0;
+}
+
+.SearchButton {
+  background: #fff;
+  border: 1px solid #3c3c3c;
+  border-left: 0;
+  border-radius: 0 3px 3px 0;
+  font-size: inherit;
+  padding: 0.8rem;
+
+  cursor: pointer;
+  margin: 0;
+}

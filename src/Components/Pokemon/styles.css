@@ -1,0 +1,36 @@
+.Pokemon {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 4px;
+
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+}
+
+.Pokemon + .Pokemon {
+  margin-top: 16px;
+}
+
+.PokemonDescription {
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.PokemonDescriptionRow {
+  display: flex;
+  padding: 16px;
+}
+
+.PokemonDescriptionRow:nth-child(odd) {
+  background: #efefef;
+}
+
+.PokemonDescriptionRow dd {
+  margin-left: 32px;
+}
+
