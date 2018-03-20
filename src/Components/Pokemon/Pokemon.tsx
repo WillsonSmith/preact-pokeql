@@ -16,9 +16,9 @@ class Pokemon extends Component {
 
   constructor(props) {
     super(props);
-    const { id, height, weight, pokemonTypes, species, sprites } = props.pokemon;
+    const { id, height, weight, pokemonTypes, species, sprites, englishName } = props.pokemon;
     this.pokemon = {
-      id, height, weight, pokemonTypes, species, sprites
+      id, height, weight, pokemonTypes, species, sprites, englishName,
     }
   }
 
@@ -36,7 +36,7 @@ class Pokemon extends Component {
           <dl class={styles.PokemonDescription}>
             <div class={styles.PokemonDescriptionRow}>
               <dt>Name</dt>
-              <dd>{this.species.identifier}</dd>
+              <dd>{this.pokemon.englishName || this.species.identifier}</dd>
             </div>
             <div class={styles.PokemonDescriptionRow}>
               <dt>Height</dt>

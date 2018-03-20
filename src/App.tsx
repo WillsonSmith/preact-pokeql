@@ -7,7 +7,7 @@ import * as styles from './App.css';
 const pokemonDataToRequest = PokemonData;
 
 async function request(query) {
-  const url = 'http://pokeql.com/v1';
+  const url = 'https://pokeql.com/v1';
   const data = new FormData();
   data.append('query', query);
   const response = await fetch(url, {
@@ -20,7 +20,7 @@ async function request(query) {
 async function queryPokemon(name) {
   const query = `
     {
-      Pokemon (filter:{identifier:"${name}"}) {
+      Pokemon (filter:{identifierLike:"${name.toLowerCase()}"}) {
         ${pokemonDataToRequest}
       }
     }
@@ -29,7 +29,6 @@ async function queryPokemon(name) {
   return responseJson.data.Pokemon.edges;
 }
 async function queryAllPokemon() {
-  const url = 'http://pokeql.com/v1';
   const query = `
     {
       Pokemon {
