@@ -76,7 +76,11 @@ class App extends Component {
               class={styles.SearchField}
               type="text"
               id="searchInput"
-              placeholder="bulbasaur"
+              placeholder="example: bulbasaur"
+              autocorrect="off"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
               onChange={this.updateQueryString} />
             <button class={styles.SearchButton} type="submit">Search</button>
           </div>
