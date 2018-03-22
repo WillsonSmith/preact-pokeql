@@ -30,7 +30,7 @@ class Pokemon extends Component {
     return (
       <div class={styles.Pokemon}>
         <div>
-          <img src={this.pokemon.sprites.normal.male.front} />
+          <img src={this.pokemon.sprites.normal.male.front} width="96" />
         </div>
         <div class={styles.PokemonDescription}>
           <dl class={styles.PokemonDescription}>
@@ -40,11 +40,11 @@ class Pokemon extends Component {
             </div>
             <div class={styles.PokemonDescriptionRow}>
               <dt>Height</dt>
-              <dd>{this.pokemon.height}</dd>
+              <dd>{this.pokemon.height} m</dd>
             </div>
             <div class={styles.PokemonDescriptionRow}>
               <dt>Weight</dt>
-              <dd>{this.pokemon.weight}</dd>
+              <dd>{this.pokemon.weight} kg</dd>
             </div>
           </dl>
         </div>
