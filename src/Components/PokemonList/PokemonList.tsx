@@ -3,7 +3,7 @@ import Pokemon from '../Pokemon';
 import * as styles from './styles.css';
 
 class PokemonList extends Component {
-  render(props, state) {
+  render(props) {
     return (
       <div class={styles.PokemonList}>
         { props.pokemon.map((pokemon) => <Pokemon key={pokemon.node.id} pokemon={pokemon.node} />) }

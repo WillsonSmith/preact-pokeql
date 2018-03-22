@@ -2,23 +2,9 @@ const PokemonData = `
   edges {
     node {
       englishName
-      species {
-        identifier
-        evolvesFromSpecies {
-          identifier
-        }
-        evolvesIntoSpecies {
-          identifier
-        }
-      }
       id
       height
       weight
-      pokemonTypes {
-        type {
-          identifier
-        }
-      }
       sprites {
         normal {
           male {
@@ -28,6 +14,38 @@ const PokemonData = `
       }
     }
   }
-`
+`;
+
+// const FullPokemonData = `
+//   edges {
+//     node {
+//       englishName
+//       species {
+//         identifier
+//         evolvesFromSpecies {
+//           identifier
+//         }
+//         evolvesIntoSpecies {
+//           identifier
+//         }
+//       }
+//       id
+//       height
+//       weight
+//       pokemonTypes {
+//         type {
+//           identifier
+//         }
+//       }
+//       sprites {
+//         normal {
+//           male {
+//             front
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default PokemonData;
