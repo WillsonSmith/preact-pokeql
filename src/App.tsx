@@ -76,7 +76,7 @@ class App extends Component {
               class={styles.SearchField}
               type="text"
               id="searchInput"
-              placeholder="example: bulbasaur"
+              placeholder="bulbasaur"
               autocorrect="off"
               autocomplete="off"
               autocapitalize="none"
