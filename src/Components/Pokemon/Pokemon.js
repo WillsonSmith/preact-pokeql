@@ -2,9 +2,7 @@ import {h, render, Component} from 'preact';
 import * as styles from './styles.css';
 
 
-class Pokemon extends Component<any, null> {
-  pokemon: any;
-
+class Pokemon extends Component {
   constructor(props) {
     super(props);
   }

@@ -61,7 +61,7 @@ class App extends Component {
     this.setState({searchQuery: evt.target.value});
   }
 
-  async fetchPokemon(name :? string) {
+  async fetchPokemon(name) {
     const pokemon = name ? await queryPokemon(name) : await queryAllPokemon();
     this.setState({pokemon});
   }
